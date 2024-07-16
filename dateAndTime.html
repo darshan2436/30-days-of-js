@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/anime-style-clouds_23-2151071767.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+            background-color: black;
+        }
+        .clock{
+            color: rgb(7, 100, 176);
+            width: 600px;
+            height: 120px;
+            padding: 50px;
+        }
+        .time{
+            font-size: 100px;
+        }
+        .date{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="time"><span id="hrs"></span>: <span id="min"></span>: <span id="sec"></span> <span id="meridiem"></span><br></div>
+        <div class="date"><span id="date"></span></div>
+    </div>
+    <script>
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = today.getMonth();
+        let day = today.getDay();
+        let dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let hrs = today.getHours();
+        let min = today.getMinutes();
+        let sec = today.getSeconds();
+        let meridiem = "AM";
+        if(hrs>=12){
+            meridiem = "PM";
+            hrs -=12;
+        }
+        (month<10)?month = "0" + month: month;
+        let dayOut = (day<10)? "0"+day:day;
+        (hrs<10)? hrs = "0"+hrs: hrs;
+        (min<10)? min="0"+min: min;
+        (sec<10)? sec="0"+sec: sec;
+        document.getElementById("date").innerHTML = "Date: "+year+"/"+month+"/"+dayOut+" ,"+dayList[day];
+        document.getElementById("hrs").innerHTML = hrs;
+        document.getElementById("min").innerHTML = min;
+        document.getElementById("sec").innerHTML = sec;
+        document.getElementById("meridiem").innerHTML = meridiem;
+        setTimeout(() => {
+            window.location.reload(1)
+        }, 1000);
+    </script>
+</body>
+</html>
