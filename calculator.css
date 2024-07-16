@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    padding: 10px;
+    width: 360px;
+    background-color: gray;
+}
+h1{
+    text-align: center;
+}
+.calculator-screen{
+    margin-bottom:10px;
+    width: 360px;
+    height: 70px;
+    background-color: white;
+}
+.calculator-row{
+    display: flex;
+}
+button{
+    padding: 40px;
+}
