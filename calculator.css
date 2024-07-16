@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 .calculator{
     padding: 10px;
@@ -13,7 +14,7 @@ h1{
 .calculator-screen{
     margin-bottom:10px;
     width: 360px;
-    height: 70px;
+    height: 100px;
     background-color: white;
 }
 .calculator-row{
