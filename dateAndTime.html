@@ -47,6 +47,9 @@
             meridiem = "PM";
             hrs -=12;
         }
+        if(hrs===0){
+            hrs=12;
+        }
         (month<10)?month = "0" + month: month;
         let dayOut = (day<10)? "0"+day:day;
         (hrs<10)? hrs = "0"+hrs: hrs;
