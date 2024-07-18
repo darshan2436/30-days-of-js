@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        main{
+            margin-left: 33%;
+            width: 500px;
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+        }
+        .count-container{
+            color: rgb(11, 203, 11);
+            font-size: 100px;
+        }
+        button{
+            border: 1px solid black;
+            border-radius: 7px;
+            font-size: large;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>COUNTER</h1>
+    <div class="count-container">
+        <span id="count">0</span>
+    </div>
+    <div class="button-container">
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+        <button id="increase">Increase</button>
+    </div>
+    </main>
+    <script>
+
+        const countSpanElement = document.getElementById("count");
+        let countNumber=0;
+        function changeCounter(event){
+            (event == "reset")? countNumber = 0 : (event == "increase")? countNumber++ : countNumber--;
+            countSpanElement.innerText = countNumber;
+        }
+
+        const increasebtn  = document.getElementById("increase");
+        const decreasebtn = document.getElementById("decrease");
+        const resetbtn = document.getElementById("reset");
+
+        increasebtn.addEventListener("click" ,function(){
+            changeCounter("increase");
+        });
+        decreasebtn.addEventListener("click" ,function(){
+            changeCounter("decrease");
+        })
+        resetbtn.addEventListener("click" ,function(){
+            changeCounter("reset");
+        })
+    </script>
+</body>
+</html>
