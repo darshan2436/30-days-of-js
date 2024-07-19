@@ -49,6 +49,11 @@ form{
     border: 1px solid lightgray;
 }
 
+.form-input span{
+    padding: 2px;
+    margin-left: 20px;
+}
+
 a{
     text-decoration: none;
     color: rgb(247, 94, 39);

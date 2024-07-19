@@ -1,5 +1,5 @@
 function validate(){
-    return (validatePassword()&&validatePhoneEmail())? true: false;
+    return (validatePassword()&& validateEmail())? true: false;
 }
 function validatePassword(){
     var password = document.getElementById("password").value;
@@ -22,19 +22,18 @@ function validatePassword(){
     }
 }
 function validateEmail(){
-    var phoneEmail = document.getElementById("email-phone").value;
+    var Email = document.getElementById("email").value;
     const emailPtrn = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-    console.log(phoneEmail);
-    if(phoneEmail === ""|| phoneEmail == null){
-        document.getElementById("email-phone-valid").innerText = "Please Enter your email or phone";
+    if(Email === ""|| Email == null){
+        document.getElementById("email-valid").innerText = "Please Enter your email or phone";
         return false;
     }
-    else if((phoneEmail.search(phonePtrn)<0) || (phoneEmail.search(emailPtrn)<0)){
-        document.getElementById("email-phone-valid").innerText = "pattern doesn't match";
+    else if(Email.search(emailPtrn)<0){
+        document.getElementById("email-valid").innerText = "It should be in format youremail@gmail.com";
         return false;
     }
     else{
-        document.getElementById("email-phone-valid").innerText = "";
+        document.getElementById("email-valid").innerText = "";
         return true;
     }
 }
