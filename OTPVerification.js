@@ -34,4 +34,4 @@ inputs.forEach((input, index1) => {
     })
 })
 
-window.addEventListener("load", () => inputs[0].focus())
+window.addEventListener("load", () => inputs[0].focus());
