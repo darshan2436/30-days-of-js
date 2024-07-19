@@ -8,16 +8,16 @@
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
 </head>
 <body >
-    <form action="OTPVerification.html" onsubmit="validate()">
+    <form action="OTPVerification.html" onsubmit="return validate()">
         <div class="form">
             <div class="form-header">
                 <h1>Login Form</h1>
             </div>
             <div class="form-input">
                 <button>Enter your credientials</button>
-                <input type="text" name="email-phone" id="email-phone" required placeholder="Email or Phone">
-                <span id="email-phone-valid"></span>
-                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="text" name="email" id="email" required placeholder="xyz@gmail.com" onkeyup="validatePhoneEmail()">
+                <span id="email-valid"></span>
+                <input type="password" name="password" id="password" placeholder="Password" required onkeyup="validatePassword()">
                 <span id="password-valid"></span>
                 <a href="#">forget password?</a>
             </div>
