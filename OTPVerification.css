@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background-color: rgb(41, 157, 252);
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-top: 7%;
+    background-color: white;
+    width: 27%;
+    height: 30rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.form{
+    margin-top: 90px;
+}
+
+.form-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.form-icon img{
+    width: 60px;
+}
+
+.form-info{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-input{
+    display: flex;
+    margin: 30px;
+}
+
+.form-input input{
+    padding: 20px;
+    width: 20px;
+    margin-left: 23px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.form-input input::-webkit-inner-spin-button,
+.form-input input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.form-verify{
+    text-align: center;
+}
+
+.form-verify button{
+    width: 75%;
+    padding: 10px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: rgb(90, 177, 249);
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
