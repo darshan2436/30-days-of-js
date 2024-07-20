@@ -14,7 +14,7 @@
             {first:"Nikola",last:"Tesla",dob:"1856",dod:"1943"}
         ];
 
-        const people = [
+        const peoples = [
       'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Beckett, Samuel', 'Blake, William', 'Berger, Ric', 'Beddoes, Mick', 'Beethoven, Ludwig',
       'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving',
       'Benn, Tony', 'Benson, Leana', 'Bent, Silas', 'Berle, Milton', 'Berry, Halle', 'Biko, Steve', 'Beck, Glenn', 'Bergman, Ingmar', 'Black, Elk', 'Berio, Luciano',
@@ -22,54 +22,85 @@
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
        ];
 
-        // const fifteens = scientists.filter(function(scientist){
-        //     if(scientist.dob>=1500 && scientist.dob<1600){
-        //         return true;
-        //     }
-        // })
+        //filter the scientists that were born in 1500s
         const fifteens = scientists.filter(scientist =>(scientist.dob >=1500 && scientist.dob<1600));//the filter function filters the array if the condition is true
         console.table(fifteens);
 
-        // const fullNames = scientists.map(function(scientist){
-        //     return (`${scientist.first} ${scientist.last}`);
-        // })
+        //joins first and second name using the map function
         const fullNames = scientists.map(scientist => `${scientist.first} ${scientist.last}`);
         console.log(fullNames);
 
-        // const ordered = scientists.sort(function(a,b){
-        //     if(a.dob>b.dob){
-        //         return 1;
-        //     }
-        //     else{
-        //         return -1;
-        //     }
-        // })
+        //sort the scientist according to their date of birth
         const ordered = scientists.sort((a,b) => (a.dob>b.dob)?  1: -1)
         console.table(ordered);
 
+        //gives the total no. of year the scientists lived from the above array
         const yearLived = scientists.reduce((total,scientist) =>{
             return total + (scientist.dod-scientist.dob); 
         },0); //here 0 makes sure the value of total is 0. Since,it is undefined
         console.log(yearLived);
 
+        //sort the scientists according to the years they lived
         const lived = scientists.sort((a,b) => ((a.dod-a.dob) < (b.dod-b.dob))? 1: -1)
         console.table(lived);
 
-        //  create a list of Boulevards in Paris that contain 'de' anywhere in the name
-        // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-        // const category = document.querySelector('.mw-category');
-        // const link = Array.from(category.querySelectorAll('a'));
-        // const de = link.map(link => link.textContent)
-        //                .filter(streetName => streetName.includes('de'));
 
-        const alpha = people.sort(function(lastOne,nextOne){
-            console.log(lastOne);
+        //sort the people alphabetically using lastname
+        const alpha = peoples.sort(function(lastOne,nextOne){
+            const [alast , afirst] = lastOne.split(",");
+            const [blast , bfirst] = nextOne.split(",");
+            return  alast > blast ? 1 : -1;
         });
+        console.log(alpha);
+        
+        
+        const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
 
-    
-        
-        
-        
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+
+    //checks whether one of the person is 18 or not .some() method
+    const isOneAdult = people.some(people =>{
+        const currentyear = (new Date).getFullYear();
+        return (currentyear - people.year > 18);
+    })
+    console.log(isOneAdult);
+
+    //checks whether every person is 18 or not .every() method
+    const isEveryAdult = people.every(people =>{
+        const currentyear = (new Date).getFullYear();
+        return (currentyear - people.year > 18);
+    })
+    console.log(isEveryAdult);
+
+    //finding the comment with given id, filters what you are looking .find() method
+    const comment = comments.find(comment => {
+        return comment.id === 823423;
+    })
+    console.log(comment);
+
+    //return the index of  the comment with this id, .findIndex() method
+    const index = comments.findIndex(comment => {
+        return comment.id === 823423;
+    })
+    console.log(index);
+    // comments.splice(index,1,{text:"The Favoutite",id:2394283});
+    console.table(comments);
+
+    const numbers = [11,1,1111,83,39,21,43];
+    numbers.sort((a,b) => a > b ? 1:-1);
+    console.log(numbers);  
     </script>
 </body>
 </html>
