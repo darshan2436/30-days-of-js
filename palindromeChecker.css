@@ -1,0 +1,39 @@
+body{
+    background-color:darkgray;
+  }
+  .container{
+    margin-top: 150px;
+    background-color:white;
+    width:65%;
+    margin-left:16%;
+    padding:50px;
+    border:none;
+    border-radius:20px;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .input{
+    margin-left:10%;
+  }
+  input{
+    font-size:30px;
+    width:80%;
+    border-radius:10px;
+    margin:5%;
+  }
+  button{
+    width: 150px;
+    background-color: skyblue;
+    padding:10px;
+    margin-left:45%;
+    border:none;
+    border-radius:20px;
+  }
+  .result{
+    margin-top: 10px;
+  }
+  .result #result{
+    margin-left: 35%;
+  }  
