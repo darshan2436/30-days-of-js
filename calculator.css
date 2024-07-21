@@ -4,6 +4,7 @@ body{
     background-color: black;
 }
 .calculator{
+    margin-top: 80px;
     padding: 10px;
     width: 360px;
     background-color: gray;
@@ -22,4 +23,17 @@ h1{
 }
 button{
     padding: 40px;
+}
+@media only screen and (max-width: 768px) {
+    [class*="calculator"]{
+        margin-top: 30px;
+        width:240px;
+    }
+    [class*="calculator-screen"]{
+        width:240px;
+        height:65px;
+    }
+    button{
+        padding:26px;
+    }
 }
