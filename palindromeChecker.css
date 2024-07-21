@@ -35,5 +35,7 @@ body{
     margin-top: 10px;
   }
   .result #result{
+    font-weight: bold;
+    font-size: 25px;
     margin-left: 35%;
   }  
