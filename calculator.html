@@ -26,10 +26,10 @@
                 <input type="button" value="*" onclick="getValue(value)">
             </div>
             <div class="calculator-row">
-                <input type="button" value="4"onclick="getValue(value)">
-                <input type="button" value="5"onclick="getValue(value)">
-                <input type="button" value="6"onclick="getValue(value)">
-                <input type="button" value="-"onclick="getValue(value)">
+                <input type="button" value="5" onclick="getValue(value)">
+                <input type="button" value="6" onclick="getValue(value)">
+                <input type="button" value="-" onclick="getValue(value)">
+                <input type="button" value="4" onclick="getValue(value)">
             </div>
             <div class="calculator-row">
                 <input type="button" value="1" onclick="getValue(value)">
@@ -41,7 +41,7 @@
                 <input type="button" value="00" onclick="getValue(value)">
                 <input type="button" value="0" onclick="getValue(value)"> 
                 <input type="button" value="." onclick="getValue(value)"> 
-                <input type="button" value="=" onclick="evaluate()">
+                <input type="button" value="=" onclick="document.getElementById('display').value = parseFloat(eval(document.getElementById('display').value))">
             </div>
         </div>
     </div>
