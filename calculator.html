@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
@@ -14,34 +14,35 @@
         </div>
         <div class="calculator-buttons">
             <div class="calculator-row">
-                <input type="button" value="AC" onclick="document.getElementById('display').value = '' ">
-                <input type="button" value="Del" onclick="deleteValue()">
-                <input type="button" value="%" onclick="getValue(value)">
-                <input type="button" value="/" onclick="getValue(value)">
+                <input type="button" value="AC" onclick="document.getElementById('display').value = '' " class="operator">
+                <input type="button" value="Del" onclick="deleteValue()" class="operator">
+                <input type="button" value="%" onclick="getValue(value)" class="operator">
+                <input type="button" value="/" onclick="getValue(value)" class="operator">
             </div>
             <div class="calculator-row">
                 <input type="button" value="7" onclick="getValue(value)">
                 <input type="button" value="8" onclick="getValue(value)">
                 <input type="button" value="9" onclick="getValue(value)">
-                <input type="button" value="*" onclick="getValue(value)">
+                <input type="button" value="*" onclick="getValue(value)" class="operator">
             </div>
             <div class="calculator-row">
+                <input type="button" value="4" onclick="getValue(value)">
                 <input type="button" value="5" onclick="getValue(value)">
                 <input type="button" value="6" onclick="getValue(value)">
-                <input type="button" value="-" onclick="getValue(value)">
-                <input type="button" value="4" onclick="getValue(value)">
+                <input type="button" value="-" onclick="getValue(value)" class="operator">
+                
             </div>
             <div class="calculator-row">
                 <input type="button" value="1" onclick="getValue(value)">
                 <input type="button" value="2" onclick="getValue(value)">
                 <input type="button" value="3" onclick="getValue(value)">
-                <input type="button" value="+" onclick="getValue(value)">
+                <input type="button" value="+" onclick="getValue(value)" class="operator">
             </div>
             <div class="calculator-row">
                 <input type="button" value="00" onclick="getValue(value)">
                 <input type="button" value="0" onclick="getValue(value)"> 
                 <input type="button" value="." onclick="getValue(value)"> 
-                <input type="button" value="=" onclick="document.getElementById('display').value = parseFloat(eval(document.getElementById('display').value))">
+                <input type="button" value="=" onclick="document.getElementById('display').value = parseFloat(eval(document.getElementById('display').value))" class="operator">
             </div>
         </div>
     </div>
