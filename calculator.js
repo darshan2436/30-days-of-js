@@ -1,7 +1,11 @@
-let screen = document.querySelector(".calculator-screen #screen");
-function getValueClick(e){
-    console.log(e);
-    // const value = document
+let inputValue = document.getElementById("display");
+function deleteValue(){
+    let value = inputValue.value;
+    inputValue.value = value.slice(0,-1);
 }
-document.addEventListener("keydown",getValueKey);
-document.addEventListener("click",getValueClick);
+function getValue(value){
+    inputValue.value += value;
+}
+function evaluate(){
+    inputValue.value = eval(inputValue.value);
+}
