@@ -8,66 +8,40 @@
 </head>
 <body>
     <div class="calculator">
-        <h1>Calculator</h1>
-        <div class="calculator-screen">
-            <span id="scre"></span>
+        <h1>CALCULATOR</h1>
+        <div  class="calculator-screen">
+            <input type="text" id="display">
         </div>
         <div class="calculator-buttons">
             <div class="calculator-row">
-                <div data-key="55" class="number">
-                    <button value="55">7</button>
-                </div>
-                <div data-key="56" class="number">
-                    <button value="56">8</button>
-                </div>
-                <div data-key="57" class="number">
-                    <button value="57">9</button>
-                </div>
-                <div data-key="42" class="operator">
-                    <button value="42">*</button>
-                </div>
+                <input type="button" value="AC" onclick="document.getElementById('display').value = '' ">
+                <input type="button" value="Del" onclick="deleteValue()">
+                <input type="button" value="%" onclick="getValue(value)">
+                <input type="button" value="/" onclick="getValue(value)">
             </div>
             <div class="calculator-row">
-                <div data-key="51" class="number">
-                    <button value="=52">4</button>
-                </div>
-                <div data-key="53" class="number">
-                    <button value="">53</button>
-                </div>
-                <div data-key="54" class="number">
-                    <button value="54">6</button>
-                </div>
-                <div data-key="45" class="operator">
-                    <button value="45">-</button>
-                </div>
+                <input type="button" value="7" onclick="getValue(value)">
+                <input type="button" value="8" onclick="getValue(value)">
+                <input type="button" value="9" onclick="getValue(value)">
+                <input type="button" value="*" onclick="getValue(value)">
             </div>
             <div class="calculator-row">
-                <div data-key="49" class="number">
-                    <button value="49">1</button>
-                </div>
-                <div data-key="50" class="number">
-                    <button value="50">2</button>
-                </div>
-                <div data-key="51" class="number">
-                    <button value="51">3</button>
-                </div>
-                <div data-key="43" class="operator">
-                    <button value="43">+</button>
-                </div>
+                <input type="button" value="4"onclick="getValue(value)">
+                <input type="button" value="5"onclick="getValue(value)">
+                <input type="button" value="6"onclick="getValue(value)">
+                <input type="button" value="-"onclick="getValue(value)">
             </div>
             <div class="calculator-row">
-                <div data-key="48" class="number">
-                    <button value="48">0</button>
-                </div>
-                <div data-key="37" class="operator">
-                    <button value="37">%</button>
-                </div>
-                <div data-key="47" class="operator">
-                    <button value="47">/</button>
-                </div>
-                <div data-key="61" class="operator">
-                    <button value="61">=</button>
-                </div>
+                <input type="button" value="1" onclick="getValue(value)">
+                <input type="button" value="2" onclick="getValue(value)">
+                <input type="button" value="3" onclick="getValue(value)">
+                <input type="button" value="+" onclick="getValue(value)">
+            </div>
+            <div class="calculator-row">
+                <input type="button" value="00" onclick="getValue(value)">
+                <input type="button" value="0" onclick="getValue(value)"> 
+                <input type="button" value="." onclick="getValue(value)"> 
+                <input type="button" value="=" onclick="evaluate()">
             </div>
         </div>
     </div>
