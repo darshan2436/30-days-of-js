@@ -6,6 +6,3 @@ function deleteValue(){
 function getValue(value){
     inputValue.value += value;
 }
-function evaluate(){
-    inputValue.value = eval(inputValue.value);
-}
