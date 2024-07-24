@@ -13,7 +13,7 @@ fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
         displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
     })
     .catch((err)=>{
-        authorConatiner.innerHTML = `<p> There was an error loading the data`
+        authorConatiner.innerHTML = `<p> There was an error '${err}' loading the data</p>`
     })
 
 const loadMoreAuthor = ()=>{
