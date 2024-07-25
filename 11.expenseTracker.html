@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="11.expenseTracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Container</h1>
+        <div class="add-expense-container">
+            <input type="text" id="expense" placeholder="Expense Name">
+            <input type="number" id="amount" placeholder="Amount">
+            <select name="select-catagory" id="category">
+                <option value="">Food</option>
+                <option value="">Education</option>
+                <option value="">Tech</option>
+                <option value="">Miscalleneous</option>
+            </select>
+            <input type="date" id="date">
+            <input type="button" id="add-expense" value="Add Expense">
+        </div>
+        <div class="expense-container">
+            <table border="1">
+                <div class="header">
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </div>
+                <div id="expense-table-row"></div>
+            </table>
+        </div>
+        <p id="total-container">Total: <span id="total">0</span></p>
+    </div>
+</body>
+</html>
