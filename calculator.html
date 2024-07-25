@@ -14,7 +14,7 @@
         </div>
         <div class="calculator-buttons">
             <div class="calculator-row">
-                <input type="button" value="AC" onclick="document.getElementById('display').value = '' " class="operator">
+                <input type="button" value="AC" onclick="document.getElementById('display').value = '' " class="operator" id="ac">
                 <input type="button" value="Del" onclick="deleteValue()" class="operator">
                 <input type="button" value="%" onclick="getValue(value)" class="operator">
                 <input type="button" value="/" onclick="getValue(value)" class="operator">
@@ -42,7 +42,7 @@
                 <input type="button" value="00" onclick="getValue(value)">
                 <input type="button" value="0" onclick="getValue(value)"> 
                 <input type="button" value="." onclick="getValue(value)"> 
-                <input type="button" value="=" onclick="document.getElementById('display').value = parseFloat(eval(document.getElementById('display').value))" class="operator">
+                <input type="button" value="=" onclick="calculate()" class="operator">
             </div>
         </div>
     </div>
