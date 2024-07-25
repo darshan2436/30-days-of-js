@@ -10,32 +10,37 @@
     <div class="container">
         <h1>Expense Container</h1>
         <div class="add-expense-container">
-            <input type="text" id="expense" placeholder="Expense Name">
+            <input type="text" id="expense" placeholder="Expense Name" autocomplete="off">
             <input type="number" id="amount" placeholder="Amount">
             <select name="select-catagory" id="category">
-                <option value="">Food</option>
-                <option value="">Education</option>
-                <option value="">Tech</option>
-                <option value="">Miscalleneous</option>
+                <option value="" selected>--Choose an Option--</option>
+                <option value="Food">Food</option>
+                <option value="Education">Education</option>
+                <option value="Tech">Tech</option>
+                <option value="Miscalleneous">Miscalleneous</option>
             </select>
             <input type="date" id="date">
-            <input type="button" id="add-expense" value="Add Expense">
+            <button id="add-expense">Add Expense</button>
         </div>
+        <div id="error-container">
+            <p></p>
+        </div>  
         <div class="expense-container">
             <table border="1">
-                <div class="header">
+                <thead class="header">
                     <tr>
                         <th>Expense Name</th>
                         <th>Amount</th>
                         <th>Category</th>
                         <th>Date</th>
-                        <th>Action</th>
                     </tr>
-                </div>
-                <div id="expense-table-row"></div>
+                </thead>
+                <tbody id="expense-table"></tbody>
             </table>
         </div>
-        <p id="total-container">Total: <span id="total">0</span></p>
+        <p id="total-container">Total:Rs. <span id="total">0</span></p>
     </div>
+    <script src="11.expenseTracker.js">
+    </script>
 </body>
 </html>
