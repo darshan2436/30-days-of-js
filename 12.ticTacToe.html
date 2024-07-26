@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="12.ticTacToe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Tic Tac Toe</h1>
+            <p><b>PLayer X </b>moves first then <b>Player O</b> and it goes</p>
+        </div>
+        <div class="game-container">
+            <div class="game-row">
+                <input type="text" id="a1" class="cell" onclick="change1(); game();" readonly>
+                <input type="text" id="a2" class="cell" onclick="change2(); game();" readonly>
+                <input type="text" id="a3" class="cell" onclick="change3(); game();" readonly>
+            </div>
+            <div class="game-row">
+                <input type="text" id="a4" class="cell" onclick="change4(); game();" readonly>
+                <input type="text" id="a5" class="cell" onclick="change5(); game();" readonly>
+                <input type="text" id="a6" class="cell" onclick="change6(); game();" readonly>
+            </div>
+            <div class="game-row">
+                <input type="text" id="a7" class="cell" onclick="change7(); game();" readonly>
+                <input type="text" id="a8" class="cell" onclick="change8(); game();" readonly>
+                <input type="text" id="a9" class="cell" onclick="change9(); game();" readonly>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="reset">Reset Game</button>
+        </div>
+        <div class="winner-container">
+            <p id="winner"></p>
+        </div>
+    </div>
+    <script src="12.ticTacTore.js">
+    </script>
+</body>
+</html>
