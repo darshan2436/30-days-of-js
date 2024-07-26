@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    box-sizing: border-box; 
+    background-color: var(--sky-blue);
+}
+:root{
+    --black:#000000;
+    --white:#ffffff;
+    --sky-blue:#14aedc;
+    --lightgrey:#e0e7e2;
+}
+.container{
+    display: grid;
+    place-items: center;
+}
+.container h1{
+    text-align: center;
+}
+.cell:focus{
+    outline: none;
+}
+.cell{
+    margin: -2px;
+    margin-bottom: 2px;
+    height: 150px;
+    background-color: var(--lightgrey);
+    border: none;
+}
+
+#a1{
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+#a2{
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+#a3{
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+#a4{
+    border-top: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+#a5{
+    border: 1px solid var(--black);
+}
+#a6{
+    border-top: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+#a7{
+    border-top: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+#a8{
+    border-top: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+#a9{
+    border-left: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+    
+}
+.reset{
+    margin: 10px;
+}
+.reset button{
+    font-size: large;
+    padding: 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="12.ticTacToe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Tic Tac Toe</h1>
+            <p><b>PLayer X </b>moves first then <b>Plyer O</b> and it goes</p>
+        </div>
+        <div class="game-container">
+            <div class="game-row">
+                <input type="text" id="a1" class="cell" readonly>
+                <input type="text" id="a2" class="cell" readonly>
+                <input type="text" id="a3" class="cell" readonly>
+            </div>
+            <div class="game-row">
+                <input type="text" id="a4" class="cell" readonly>
+                <input type="text" id="a5" class="cell" readonly>
+                <input type="text" id="a6" class="cell" readonly>
+            </div>
+            <div class="game-row">
+                <input type="text" id="a7" class="cell" readonly>
+                <input type="text" id="a8" class="cell" readonly>
+                <input type="text" id="a9" class="cell" readonly>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="reset">Reset Game</button>
+        </div>
+        <div class="winner-container">
+            <p id="winner"></p>
+        </div>
+    </div>
+    <script src="ticTacTore.js">
+    </script>
+</body>
+</html>
