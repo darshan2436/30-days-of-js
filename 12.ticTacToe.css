@@ -3,28 +3,51 @@ body{
     box-sizing: border-box; 
     background-color: var(--sky-blue);
 }
+
 :root{
     --black:#000000;
     --white:#ffffff;
     --sky-blue:#14aedc;
     --lightgrey:#e0e7e2;
 }
+
 .container{
+    font-family: "Trirong", serif;
     display: grid;
     place-items: center;
 }
+
 .container h1{
+    font-size: 35px;
     text-align: center;
 }
+
+.head p{
+    font-size: large;
+}
+
 .cell:focus{
     outline: none;
 }
+
+.game-row{
+    display: flex;
+}
+
 .cell{
     margin: -2px;
     margin-bottom: 2px;
-    height: 150px;
     background-color: var(--lightgrey);
     border: none;
+    width: 120px;
+    height: 120px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.winner-container{
+    margin-top: -30px;
+    font-size: 30px;
 }
 
 #a1{
@@ -67,10 +90,14 @@ body{
     border-top: 1px solid var(--black);
     
 }
+
 .reset{
     margin: 10px;
 }
+
 .reset button{
     font-size: large;
     padding: 10px;
+    border: 1px dotted var(--lightgrey);
+    border-radius: 10px;
 }
