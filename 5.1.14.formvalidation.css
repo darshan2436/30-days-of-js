@@ -29,7 +29,7 @@ form{
     flex-direction: column;
 }
 
-.form-input button,.form-input input,.form-submit input{
+.form-input button,#email,.form-submit input{
     margin-left: 5%;
     width: 90%;
     padding: 7px;
@@ -43,15 +43,37 @@ form{
     color: rgb(242, 234, 234); 
 }
 
-.form-input input{
+#email{
     margin-top: 15px;
     width: 86%;
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
 }
 
 .form-input span{
     padding: 2px;
     margin-left: 20px;
+}
+
+.password{
+    display: flex;
+    width: 89%;
+    margin-left: 5%;
+    margin-top: 15px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.password input{
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+}
+
+.password i{
+    cursor: pointer;
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 a{

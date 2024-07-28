@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="formvalidation.css">
+    <link rel="stylesheet" href="5.1.14.formvalidation.css">
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
 </head>
 <body >
@@ -17,7 +17,10 @@
                 <button>Enter your credientials</button>
                 <input type="text" name="email" id="email" required placeholder="xyz@gmail.com" onkeyup="validateEmail()" autocomplete="off">
                 <span id="email-valid"></span>
-                <input type="password" name="password" id="password" placeholder="Password" required onkeyup="validatePassword()">
+                <div class="password">
+                    <input type="password" name="password" id="password" placeholder="Password" required onkeyup="validatePassword()">
+                    <i class="fa-solid fa-eye-slash" id="eyeicon"></i>
+                </div>
                 <span id="password-valid"></span>
                 <a href="#">forget password?</a>
             </div>
@@ -29,7 +32,10 @@
         </div>
         </div>
     </form>
-    <script src="formvalidation.js">
+    <script src="14.passwordCheck.js">
+    </script>
+    <script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
+    <script src="5.1.14.formvalidation.js">
     </script>
 </body>
 </html>
