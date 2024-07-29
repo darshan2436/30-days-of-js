@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary</title>
+    <link rel="stylesheet" href="15.dictionary.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="dictionary-head">
+            <h1>Dictionary</h1>
+        </div>
+            <div class="dictionary-body">
+                <input type="text" id="word-search" autocomplete="off" placeholder="search dictionary">
+                <button id="search-button">Search</button>
+        </div>
+        <div class="dictionary-meaning">
+            <div class="hide">
+                <h1>Meanings</h1>
+                <p>1. <span id="first-defn"></span></p>
+                <p>2. <span id="second-defn"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="15.dictionary.js">
+    </script>
 </body>
 </html>

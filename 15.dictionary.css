@@ -1,11 +1,64 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
 }
 :root{
     --black: #000;
     --white: #fff;
-    --light-gray: #f0f0f0;
+    --light-gray: #dfdcdc;
     --sky-blue: #2fb1e9;
     --yellow: #e3ad1a;
+    --orange-red: #f56029;
+}
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    width: 30%;
+    background-color: var(--sky-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid var(--light-gray);
+    border-radius: 10px 20px;
+}
+.dictionary-head{
+    font-size: 23px;
+}
+.dictionary-body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dictionary-body input,.dictionary-body button{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    outline: none;
+    border-radius: 5px;
+}
+.dictionary-body button{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--sky-blue);
+    margin-top: 10px;
+    width: 75%;
+}
+.dictionary-meaning{
+    padding: 20px;
+}
+.hide{
+    display: none;
+    font-size: large;
+    font-weight: bolder;
+}
+.hide span{
+    font-weight: bold;
 }
