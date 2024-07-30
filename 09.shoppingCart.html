@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Shopping Cart</title>
-    <link rel="stylesheet" href="shoppingCart.css" />
+    <link rel="stylesheet" href="09.shoppingCart.css" />
+    <script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <h1 class="title">Desserts Page</h1>
     </header>
     <main>
+      <div class="search">
+        <input type="text" id="search" placeholder="Search Dessert" onkeyup="search()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
       <button id="cart-btn" type="button" class="btn">
         <span id="show-hide-cart">Show</span> Cart
       </button>
@@ -25,6 +30,6 @@
       </div>
       <div id="dessert-card-container"></div>
     </main>
-    <script src="shoppingCart.js"></script>
+    <script src="09.shoppingCart.js"></script>
 </body>
 </html>
