@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="17.typingTest.css">
 </head>
 <body>
+    <div class="container">
+        <div class="stats">
+            <p>Time:<span id="time">60</span>s</p>
+            <p>Mistakes:<span id="mistakes">0</span></p>
+        </div>
+        <div id="quote">
+        </div>
+        <textarea rows="3" id="quote-input" placeholder="Input the text here"></textarea>
+        <button id="start" onclick="startTest()">Start test</button>
+        <button id="stop" onclick="displayResult()">Stop test</button>
+        <button id="restart" onclick="restart()">Restart</button>
+        <div class="result">
+            <h2>Result</h3>
+            <div class="wrapper">
+                <p>Accuracy: <span id="accuracy">0</span></p>
+                <p>Speed: <span id="speed">0</span>s</p>
+            </div>
+        </div>
+    </div>
     <script src="17.typingTest.js"></script>
 </body>
 </html>
