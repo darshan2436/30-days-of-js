@@ -80,7 +80,6 @@ const startTest = ()=>{
 }
 
 const displayResult = ()=>{
-    // document.getElementById("restart").style.display = "none";
     document.querySelector(".result").style.display = "block";
     quoteInput.disabled = true;
     document.getElementById("start").style.display = "block";
