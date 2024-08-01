@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book List</title>
     <link rel="stylesheet" href="18.bookList.css">
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="container-head">
+            <img src="images/Book.png" alt="">
+            <h1>My Book List</h1>
+        </div>
+        <div class="add-book-container">
+            <label for="book-title">Title:</label>
+            <input type="text" id="book-title">
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author">
+            <label for="book-isbn">ISBN#:</label>
+            <input type="text" id="book-isbn">
+            <button id="add-book">Submit</button>
+        </div>
+        <div class="error-container">
+            <p></p>
+        </div>
+        <div class="book-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="book-table"></tbody>
+            </table>
+        </div>
+    </div>
     <script src="18.bookList.js"></script>
 </body>
 </html>
