@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#111;
+    --white:#fff;
+    --lightgrey:#cccccc;
+    --sky-blue:#17a4f0;
+}
