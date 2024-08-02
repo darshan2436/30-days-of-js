@@ -4,6 +4,7 @@ body{
 }
 
 h1{
+    font-weight: 50;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 5rem;
@@ -19,7 +20,8 @@ button{
 }
 
 .score{
-    background: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+    background: rgba(185, 184, 184, 0.2);
     padding: 1 3rem;
     line-height: 1;
     border-radius: 1rem;
