@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-color: rgb(247, 94, 39);
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form{
+    background-color: white;
+    width: 27%;
+    height: 30rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.form{
+    margin-top: 60px;
+}
+
+.form-header h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input button,#email,.form-submit input{
+    margin-left: 5%;
+    width: 90%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.form-input button,.form-submit input{
+    border: none;
+    background-color: rgb(247, 94, 39);
+    font-size: large;
+    color: rgb(242, 234, 234); 
+}
+
+#email{
+    margin-top: 15px;
+    width: 86%;
+    border: 2px solid lightgray;
+}
+
+.form-input span{
+    padding: 2px;
+    margin-left: 20px;
+}
+
+.password{
+    display: flex;
+    width: 89%;
+    margin-left: 5%;
+    margin-top: 15px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.password input{
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+}
+
+.password i{
+    cursor: pointer;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(247, 94, 39);
+}
+
+.form-input a{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.form-submit input{
+    margin-top: 10px;
+}
+
+.form-submit-signup{
+    margin-top: 20px;
+    text-align: center;
+}
