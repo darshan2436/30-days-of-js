@@ -48,6 +48,10 @@ body{
     border-radius: 37px;
 }
 
+button:active{
+    transform: scale(0.95);
+}
+
 .container button{
     font-size: 22px;
     font-weight: 700;
