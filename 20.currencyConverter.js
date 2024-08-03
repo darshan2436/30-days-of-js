@@ -16,8 +16,8 @@ function caclulate(){
             const rates = res.rates[toCurrencyValue];
             exchangeRate.value = rates;
             toAmount = (inputAmount.value*rates).toFixed(3);
-            outputFrom.textContent = inputAmount.value;
-            outputTo.textContent = toAmount;
+            outputFrom.textContent = `${inputAmount.value} ${fromCurrencyValue}`;
+            outputTo.textContent = `${toAmount} ${toCurrencyValue}`;
             document.getElementById("outputText").style.display = "block";
         })
 }
