@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded",()=>{
     let gameDisplay = document.querySelector(".game-container");
     let bird = document.querySelector(".bird");
-    let ground = document.querySelector(".ground");
 
     let birdLeft = 230;
     let birdButtom = 300;
@@ -58,7 +57,8 @@ document.addEventListener("DOMContentLoaded",()=>{
                 clearInterval(timerId);
                 gameDisplay.removeChild(obstacle);
             }
-            if(obstacleLeft > 200 && obstacleLeft < 320 && (birdLeft === 230) && (birdButtom < obstacleButtom + 103 || birdButtom >  obstacleButtom + gap -250) ||  birdButtom < 0)
+            if(obstacleLeft > 200 && obstacleLeft < 320 && (birdLeft === 230) && 
+            (birdButtom < obstacleButtom + 103 || birdButtom >  obstacleButtom + gap -250) ||  birdButtom < 0)
             {
                 clearInterval(timerId);
                 gameOver();
