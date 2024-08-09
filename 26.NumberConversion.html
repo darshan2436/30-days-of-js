@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Conversion</title>
+    <link rel="stylesheet" href="26.NumberConversion.css">
+    <script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Conversion</h1>
+        <input type="text" id="number" placeholder="Input Value here">
+        <div class="changing-container">
+            <select id="from">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">HexaDecimal</option>
+            </select>
+            <button id="exchange">
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+            <select id="to">
+                <option value="2">Binary</option>
+                <option value="8" selected>Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">HexaDecimal</option>
+            </select>
+        </div>
+        <button onclick="calculate()" id="change">Change</button>
+        <div class="result">
+            <p>Conversion is: <span id="result"></span></p>
+        </div>
+    </div>
+    <script src="26.NumberConversion.js"></script>
+</body>
+</html>

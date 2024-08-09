@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: skyblue;
+    width: 30%;
+    height: 14rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container input,#change{
+    width: 80%;
+    padding: 2px;
+    margin: 2px;
+    margin-left: 30px;
+}
+.container select{
+    width: 30%;
+    padding: 2px;
+    margin: 2px;
+}
+#exchange{
+    outline: none;
+    padding: 1px;
+    width: 26px;
+    height: 25px;
+    border-radius: 15px;
+}
