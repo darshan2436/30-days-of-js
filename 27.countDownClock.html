@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Clock</title>
+    <link rel="stylesheet" href="27.countDownClock.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav>
+                <button data-time="15">15s</button>
+                <button data-time="30">30s</button>
+                <button data-time="60">60s</button>
+                <button data-time="300">5min</button>
+                <form action="" name="customForm">
+                    <input name="minutes" type="number" placeholder="Enter minutes">
+                </form> 
+            </nav>
+        </div>
+        <div class="display">
+            <h1 class="display__time-left"></h1>
+            <p class="display__end-time"></p>
+        </div>
+    </div>
+    <script src="27.countDownClock.js"></script>
+</body>
+</html>
