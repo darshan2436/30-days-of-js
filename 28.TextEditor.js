@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll("button");
 const text = document.querySelector("#editor");
 
-text.addEventListener("click",(e)=>{
+text.addEventListener("keydown",(e)=>{
     if(e.keyCode ===  13){
         e.preventDefault();
     }
