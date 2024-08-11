@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="28.TextEditor.css">
+    <script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>A Simple Text Editor</h1>
+        <form action="">
+            <button class="align" data-cmd="start">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="align" data-cmd="end">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button class="align" data-cmd="center">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="align" data-cmd="justify">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+            <button class="style" data-cmd="strong">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+            <button class="style" data-cmd="em">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+            <button class="style" data-cmd="u">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+            <button class="type" data-cmd="upper">ABC</button>
+            <button class="type" data-cmd="lower">abc</button>
+            <button class="embedded">
+                <i class="fa-solid fa-code"></i>
+            </button>
+        </form>
+        <div id="editor" contenteditable="true">
+        </div>
+    </div>
+    <script src="28.TextEditor.js"></script>
+</body>
+</html>
