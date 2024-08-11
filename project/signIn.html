@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Path</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <div class="navbar">
+            <nav>
+                <a href="index.html" id="noEffect"><img src="image/edupath_logo.png" alt="Edu Path's logo"></a>
+                <a href="index.html">HOME</a>
+                <a href="scholarship.html">SCHOLARSHIPS</a>
+                <a href="college.html" id="college">COLLEGE</a>
+                <div class="hover college">
+                    <a href="college.html#engineering">Engineering</a>
+                    <a href="college.html#managment">Managment</a>
+                </div>
+                <a href="about.html" id="about">ABOUT US</a>
+                <div class="hover about">
+                    <a href="about.html">About Us</a>
+                    <a href="aboutEdupath.html">About Edu Path</a>
+                </div>
+                <a href="signIn.html"  id="background">SIGN IN</a>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+            <form onsubmit="return validate()">
+                    <div class="form">
+                        <div class="form-header">
+                            <h1>Login Form</h1>
+                        </div>
+                        <div class="form-input">
+                            <button>Enter your credientials</button>
+                            <input type="text" name="email" id="email" required placeholder="xyz@gmail.com" onkeyup="validateEmail()" autocomplete="off">
+                            <span id="email-valid"></span>
+                            <div class="password">
+                                <input type="password" name="password" id="password" placeholder="Password" required onkeyup="validatePassword()">
+                                <i class="fa-solid fa-eye-slash" id="eyeicon"></i>
+                            </div>
+                            <span id="password-valid"></span>
+                            <!-- <a href="#">forget password?</a> -->
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" name="submit" id="submit">
+                            <div class="form-submit-signup">
+                                Not a member?<a href="#">Sign Up now</a>
+                            </div>
+                    </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="passwordShowHide.js">
+    </script>
+    <script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
+    <script src="form.js">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

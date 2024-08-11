@@ -1,0 +1,60 @@
+.about h2{
+    text-align: center;
+    font-size: 45px;
+    color:black;
+    background-color: rgba(168, 208, 249,0.9);
+}
+h3{
+    text-align: center;
+    margin-left:10px;
+    color:crimson;
+}
+h4{
+    margin-left:15px;
+    text-align: center;
+    color:chocolate;
+}
+.about div{
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+div img{
+    margin-left: 40px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+}
+.about{
+    font-family: "Barlow", sans-serif;
+    background-color: rgba(168, 208, 249,0.9);
+}
+.about h3{
+    margin-top: 40px;
+    font-size: 42px;
+}
+.individual{
+    font-weight: 500;
+    font-size: 22px;
+    position: absolute;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.individual p{
+    margin-top: 20px;
+}
+.individual1{
+    top: 180px;
+}
+.individual2{
+    top: 570px;
+}
+.individual3{
+    top: 970px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color:black;
+}
