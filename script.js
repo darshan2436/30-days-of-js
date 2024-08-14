@@ -16,7 +16,7 @@ const projects = [
         link :"05.1.14.formvalidation.html",
         name :"Form Validation with Otp Verification"
     },{
-        link :"06.arrayMethod.html",
+        link :"06.arrayMethods.html",
         name :"Some Array Methods"
     },{
         link :"07.palindromeChecker.html",
@@ -28,10 +28,10 @@ const projects = [
         link :"09.shoppingCart.html",
         name :"DShopping Cart"
     },{
-        link :"10.fetchingAndPromise.html",
+        link :"10.fetchingAndPromises.html",
         name :"Fetching And Promise"
     },{
-        link :"11.expenseTracer.html",
+        link :"11.expenseTracker.html",
         name :"Expense Tracker"
     },{
         link :"12.ticTacToe.html",
@@ -76,7 +76,7 @@ const projects = [
         link :"25.DinoGame.html",
         name :"Dino Game"
     },{
-        link :"26.NmberConversion.html",
+        link :"26.NumberConversion.html",
         name :"Number Conversion"
     },{
         link :"27.countDownClock.html",
