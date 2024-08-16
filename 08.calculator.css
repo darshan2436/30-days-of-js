@@ -67,3 +67,20 @@ input[type="button"]{
         height: 53px;
     }
 }
+@media screen and (max-width:800px) {
+    .calculator{
+        margin-top: 20px;
+        width: 300px;
+    }
+    .calculator-screen input{
+        width: 290px;
+        height: 50px;
+    }
+    .calculator-row{
+        height: 50px;
+    }
+    input[type="button"]{
+        width: 120px;
+        height: 43px;
+    }
+}

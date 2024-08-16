@@ -6,9 +6,13 @@ body{
     text-align: center;
     font-size: large;
 }
+h1{
+    margin-left: 13%;
+    width: 80%;
+}
 details{
-    margin-left: 33%;
-    width: 500px;
+    margin-left: 30%;
+    width: 40%;
     margin-top: 20px;
     background-color: rgb(65, 187, 252);
     padding: 10px;
@@ -17,11 +21,18 @@ details{
 .points-container,.options-container,.button-container{
     padding: 10px;
 }
-.options-container{
+.points-container{
+    margin-left: 33%;
+    display:flex;
+    width: 35%;
+    padding: 0;
+}
+.points-container strong{
+    margin-left: 13%;
     display: block;
 }
-strong{
-    margin: 100px;
+.options-container{
+    display: block;
 }
 button{
     padding: 0;
