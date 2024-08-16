@@ -19,7 +19,7 @@ body{
 .container{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     background-color: var(--sky-blue);
     display: flex;
     flex-direction: column;
@@ -61,4 +61,23 @@ body{
 }
 .hide span{
     font-weight: bold;
+}
+@media screen and (max-width:800px) {
+    .container{
+        width: 75%;
+    }
+    .dictionary-head{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:400px) {
+    .container{
+        width: 85%;
+    }
+    .dictionary-head{
+        font-size: 18px;
+    }
+    .dictionary-body button{
+        font-size: 15px;
+    }
 }

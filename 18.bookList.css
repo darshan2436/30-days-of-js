@@ -75,3 +75,31 @@ a{
     text-decoration: none;
     color: var(--red);
 }
+@media screen and (max-width:900px) {
+    .container-head img{
+        margin-right: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .container-head{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+        margin-left: 10%;
+        width: 90%;
+        font-size: 14px;
+    }
+    .container-head img{
+        margin-right: 0;
+        width: 70px;
+        height: 70px;
+    }
+    .container-head{
+        font-size: 11px;
+    }
+    th,td{
+        padding: 3px;
+    }
+}

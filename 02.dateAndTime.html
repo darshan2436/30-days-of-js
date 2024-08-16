@@ -11,20 +11,49 @@
             background-size: cover;
             display: flex;
             justify-content: center;
-            margin-top: 250px;
+            margin-top: 15%;
             background-color: black;
         }
         .clock{
+            margin-left: 15%;
             color: rgb(7, 100, 176);
-            width: 600px;
-            height: 120px;
-            padding: 50px;
+            width: 60%;
+            height: 12%;
+            padding: 3em;
         }
         .time{
             font-size: 100px;
         }
         .date{
             font-size: 50px;
+        }
+        @media screen and (max-width:1200px) {
+            .time{
+                font-size: 80px;
+            }
+            .date{
+                font-size: 40px;
+            }
+        }
+        @media screen and (max-width:800px) {
+            .time{
+                font-size: 45px;
+            }
+            .date{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width:400px) {
+            .clock{
+               padding: 0;
+               width: 100%;
+            }
+            .time{
+                font-size: 40px;
+            }
+            .date{
+                font-size: 25px;
+            }
         }
     </style>
 </head>

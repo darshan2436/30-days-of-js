@@ -84,3 +84,28 @@ body{
 #restart{
     display: none;
 }
+@media screen and (max-width:1250px) {
+    .container{
+        width: 600px;
+        height: 400px;
+        font-size: 15px;
+    }
+    .timer{
+        left: 600px;
+    }
+    #questions{
+        top: 20px;
+        left: 120px;
+    }
+}
+@media screen and (max-width:800px) {
+    #questions{
+        left: 120px;
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .timer{
+        top: 40px;
+    }
+}

@@ -26,7 +26,7 @@ const projects = [
         name :"Calculator"
     },{
         link :"09.shoppingCart.html",
-        name :"DShopping Cart"
+        name :"Shopping Cart"
     },{
         link :"10.fetchingAndPromises.html",
         name :"Fetching And Promise"

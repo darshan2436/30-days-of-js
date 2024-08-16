@@ -6,8 +6,8 @@ body{
 }
 .container{
     background-color: skyblue;
-    width: 30%;
-    height: 14rem;
+    width: 50%;
+    height: 16rem;
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -33,4 +33,14 @@ body{
     width: 26px;
     height: 25px;
     border-radius: 15px;
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 80%;
+    }
 }

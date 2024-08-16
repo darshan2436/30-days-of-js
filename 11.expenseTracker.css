@@ -58,6 +58,36 @@ th{
     background-color: var(--grey);
 }
 .container #total-container{
-    margin-left: 85%;
+    margin-left: 80%;
     font-size: 30px;
+}
+@media screen and (max-width:800px) {
+    th,td{
+        font-size: 22px;
+    }
+    .container #total-container{
+        font-size: 29px;
+    }
+}
+@media screen and (max-width:600px) {
+    .add-expense-container{
+        flex-wrap: wrap;
+    }
+    .add-expense-container input,.add-expense-container select,.add-expense-container button{
+        margin: 2px;
+        margin-left: 20%;
+        font-size: medium;
+        width: 60%;
+    }
+    .add-expense-container select,.add-expense-container button{
+        width: 62.4%;
+    }
+    th,td{
+        font-size: 18px;
+        padding: 0;
+    }
+    .container #total-container{
+        margin-left: 75%;
+        font-size: 25px;
+    }
 }
