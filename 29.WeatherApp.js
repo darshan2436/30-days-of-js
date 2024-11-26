@@ -1,5 +1,5 @@
 const city = document.querySelector("#city");
-import apiKey from "./api.js";
+import apiKey from "./api.env";
 const weatherDataEl = document.querySelector(".weather-data");
 const formEl = document.querySelector("form");
 
